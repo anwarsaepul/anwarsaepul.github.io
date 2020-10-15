@@ -23,10 +23,12 @@ section {
 
 .portofolio {
 	background-color: #eee;
+	padding-top: 30px;
 }
 
 .contact {
 	min-height: 800px;
+	margin-top: 30px;
 
 }
 
