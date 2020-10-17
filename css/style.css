@@ -2,11 +2,19 @@ html {
 	position: relative;
 
 }
-
 body {
-	margin-bottom: 100px;
+	margin-bottom: 80px;
+	margin-top: 30px; 
 }
 
+nav div{
+
+	/*border: 3px solid #666;*/
+}
+nav div ul{
+
+	/*border: 5px solid #999;*/
+}
 .jumbotron img {
 	width: 200px;
 	border: 5px solid #666;
