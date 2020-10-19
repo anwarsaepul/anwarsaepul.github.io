@@ -7,17 +7,28 @@ body {
 	margin-top: 50px; 
 }
 
-nav div{
 
-	/*border: 3px solid #666;*/
-}
-nav div ul{
 
-	/*border: 5px solid #999;*/
+.jumbotron{
+	background-image: url('../img/header-bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -30px;
+	color: #eaeaea;
+	height: 400px;
+	
+	padding-top: 30px;
+
 }
+
+.jumbotron h1, .jumbotron p{
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
 .jumbotron img {
-	width: 200px;
-	border: 5px solid #666;
+	height: 250px;
+	border: 3px solid #333;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 hr {
@@ -52,4 +63,27 @@ footer {
 footer p {
 	color: #aaa;
 	font-size: 1em;
+}
+
+.spage-scroll{
+	visibility: hidden;
+}
+
+.slide{
+	animation-name: slide;
+	animation-duration: 1s;
+	visibility: visible;
+}
+@keyframes slide
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateY(75%);
+	}
+	100%
+	{
+		opacity: 0;
+		transform: translateY(0%);
+	}
 }
