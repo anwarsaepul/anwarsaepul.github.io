@@ -13,11 +13,11 @@ body {
 	background-image: url('../img/header-bg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: 0 -30px;
+	/*background-position: 0 -20px;*/
 	color: #eaeaea;
 	height: 400px;
-	
 	padding-top: 30px;
+	overflow: hidden;
 
 }
 
@@ -40,9 +40,36 @@ section {
 	min-height: 270px;
 }
 
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(15deg);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pTampil, .pKanan.pTampil {
+	opacity: 1;
+	transform: translate(0,0);
+
+}
+
 .portofolio {
 	background-color: #eee;
 	padding-top: 30px;
+}
+
+.portofolio .img-thumbnail {
+	opacity: 0;
+	transform: translate(0, -400px);
+	transition: .5s;
+}
+
+.portofolio .img-thumbnail.tampil {
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .contact {
